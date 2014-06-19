@@ -1,0 +1,29 @@
+﻿@model AplicacioOptativa.Models.Autos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Autos</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nombre)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nombre)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Anio)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Anio)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.AutosId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
